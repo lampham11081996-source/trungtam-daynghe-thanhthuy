@@ -35,6 +35,52 @@ function mapSupabaseStudent(row: any) {
 }
 
 
+function mapSupabaseCourse(row: any) {
+  return {
+    id: row.ma_khoa_hoc || String(row.id || ""),
+    name: row.ten_khoa_hoc || "",
+    fee: Number(row.hoc_phi || 0),
+    duration: row.thoi_gian_hoc || "",
+    requirements: row.dieu_kien || "",
+    description: row.mo_ta || "",
+    documents: row.ho_so_can_chuan_bi || "",
+    image: row.hinh_anh || row.image || "",
+    featured: row.noi_bat ?? true,
+    status: row.trang_thai || "active",
+    class: row.hang || "",
+    ma_khoa_hoc: row.ma_khoa_hoc,
+    ten_khoa_hoc: row.ten_khoa_hoc,
+    hang: row.hang,
+    hoc_phi: row.hoc_phi,
+    ngay_khai_giang: row.ngay_khai_giang,
+    created_at: row.created_at
+  };
+}
+
+async function getCoursesFromSupabaseOrDb() {
+  const db = readDb();
+
+  if (supabaseEnabled()) {
+    try {
+      const { data, error } = await supabase!
+        .from("khoa_hoc")
+        .select("*")
+        .order("id", { ascending: true });
+
+      if (error) {
+        console.error("Supabase get courses error:", error);
+      } else if (data && data.length > 0) {
+        return data.map(mapSupabaseCourse);
+      }
+    } catch (error) {
+      console.error("Supabase get courses exception:", error);
+    }
+  }
+
+  return db.courses || [];
+}
+
+
 // Ensure directories exist
 if (!fs.existsSync(path.dirname(DB_PATH))) {
   fs.mkdirSync(path.dirname(DB_PATH), { recursive: true });
@@ -390,65 +436,107 @@ async function startServer() {
   app.get("/api/init", async (req, res) => {
     const db = readDb();
 
+    let infoData = db.info || {};
+    let coursesData = await getCoursesFromSupabaseOrDb();
+    let newsData = db.news || [];
+    let studentsData = db.students || [];
+    let contactsData = db.contacts || [];
+
     if (supabaseEnabled()) {
       try {
-        const [infoRes, coursesRes, newsRes] = await Promise.all([
-          supabase!.from("cau_hinh_website").select("*").limit(1).maybeSingle(),
-          supabase!.from("khoa_hoc").select("*").order("id", { ascending: true }),
-          supabase!.from("tin_tuc").select("*").order("created_at", { ascending: false }).limit(20)
-        ]);
+        const { data } = await supabase!
+          .from("cau_hinh_website")
+          .select("*")
+          .limit(1)
+          .maybeSingle();
 
-        return res.json({
-          info: infoRes.data ? {
-            name: infoRes.data.ten_trung_tam || "Trung tâm dạy nghề Thanh Thủy",
-            address: infoRes.data.dia_chi || "",
-            phone: infoRes.data.so_dien_thoai || "",
-            email: infoRes.data.email || "",
-            website: infoRes.data.website || "",
-            ...infoRes.data
-          } : (db.info || {}),
-          courses: (coursesRes.data || []).map((c: any) => ({
-            id: c.ma_khoa_hoc || String(c.id),
-            name: c.ten_khoa_hoc || "",
-            class: c.hang || "",
-            price: c.hoc_phi || 0,
-            status: c.trang_thai || "active",
-            featured: true,
-            ...c
-          })),
-          schedules: db.schedules || [],
-          students: db.students || [],
-          questions: db.questions || [],
-          news: (newsRes.data || []).map((n: any) => ({
+        if (data) {
+          infoData = {
+            name: data.ten_trung_tam || "Trung tâm dạy nghề Thanh Thủy",
+            address: data.dia_chi || "",
+            hotline: data.so_dien_thoai || "",
+            phone: data.so_dien_thoai || "",
+            email: data.email || "",
+            website: data.website || "",
+            ...data
+          };
+        }
+      } catch (error) {
+        console.error("Supabase /api/init info error:", error);
+      }
+
+      try {
+        const { data } = await supabase!
+          .from("hoc_vien")
+          .select("*")
+          .order("id", { ascending: false });
+
+        if (data) {
+          studentsData = data.map(mapSupabaseStudent);
+        }
+      } catch (error) {
+        console.error("Supabase /api/init students error:", error);
+      }
+
+      try {
+        const { data } = await supabase!
+          .from("tin_tuc")
+          .select("*")
+          .order("created_at", { ascending: false })
+          .limit(20);
+
+        if (data) {
+          newsData = data.map((n: any) => ({
             id: String(n.id),
             title: n.tieu_de || "",
+            category: n.danh_muc || "Tin tức",
             summary: n.mo_ta_ngan || "",
             content: n.noi_dung || "",
             image: n.anh_dai_dien || "",
             date: n.created_at ? String(n.created_at).split("T")[0] : "",
+            author: n.tac_gia || "Ban tuyển sinh",
             status: n.trang_thai || "published",
             ...n
-          })),
-          documents: db.documents || [],
-          albums: db.albums || [],
-          contacts: db.contacts || [],
-          logs: db.logs || []
-        });
+          }));
+        }
       } catch (error) {
-        console.error("Supabase /api/init error:", error);
+        console.error("Supabase /api/init news error:", error);
+      }
+
+      try {
+        const { data } = await supabase!
+          .from("lien_he")
+          .select("*")
+          .order("created_at", { ascending: false });
+
+        if (data) {
+          contactsData = data.map((c: any) => ({
+            id: String(c.id),
+            name: c.ho_ten || "",
+            phone: c.so_dien_thoai || "",
+            email: c.email || "",
+            subject: c.tieu_de || "Liên hệ nhanh",
+            message: c.noi_dung || "",
+            date: c.created_at ? String(c.created_at).split("T")[0] : "",
+            status: c.trang_thai || "Mới",
+            notes: c.ghi_chu || ""
+          }));
+        }
+      } catch (error) {
+        console.error("Supabase /api/init contacts error:", error);
       }
     }
 
     res.json({
-      info: db.info || {},
-      courses: db.courses || [],
+      info: infoData,
+      courses: coursesData,
       schedules: db.schedules || [],
-      students: db.students || [],
+      students: studentsData,
       questions: db.questions || [],
-      news: db.news || [],
+      news: newsData,
       documents: db.documents || [],
       albums: db.albums || [],
-      contacts: db.contacts || [],
+      contacts: contactsData,
       logs: db.logs || []
     });
   });
@@ -466,31 +554,8 @@ async function startServer() {
 
   // 3. Courses API
   app.get("/api/courses", async (req, res) => {
-    if (supabaseEnabled()) {
-      try {
-        const { data, error } = await supabase!
-          .from("khoa_hoc")
-          .select("*")
-          .order("id", { ascending: true });
-
-        if (!error && data) {
-          return res.json(data.map((c: any) => ({
-            id: c.ma_khoa_hoc || String(c.id),
-            name: c.ten_khoa_hoc || "",
-            class: c.hang || "",
-            price: c.hoc_phi || 0,
-            status: c.trang_thai || "active",
-            featured: true,
-            ...c
-          })));
-        }
-      } catch (error) {
-        console.error("Supabase /api/courses error:", error);
-      }
-    }
-
-    const db = readDb();
-    res.json(db.courses || []);
+    const courses = await getCoursesFromSupabaseOrDb();
+    res.json(courses);
   });
 
   app.post("/api/courses", requireAuth, (req, res) => {
