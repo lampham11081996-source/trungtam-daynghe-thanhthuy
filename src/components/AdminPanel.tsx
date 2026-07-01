@@ -1944,14 +1944,20 @@ export default function AdminPanel({
                   <span className="w-1.5 h-4 bg-orange-500 rounded-full"></span>
                   Tùy Chỉnh Giao Diện & Màu Sắc
                 </h3>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                   {Object.entries({
                     blue: { name: "Xanh Dương & Cam", desc: "Mặc định truyền thống, uy tín", bg: "bg-blue-900", accent: "bg-orange-500" },
                     green: { name: "Lục Bảo & Hổ Phách", desc: "Tươi mới, thân thiện môi trường", bg: "bg-emerald-800", accent: "bg-amber-500" },
                     teal: { name: "Xanh Ngọc & San Hô", desc: "Trẻ trung, hiện đại, nổi bật", bg: "bg-teal-800", accent: "bg-rose-500" },
                     charcoal: { name: "Xám Đá & Hồng Phấn", desc: "Sang trọng, đậm chất công nghệ", bg: "bg-slate-800", accent: "bg-pink-500" },
                     purple: { name: "Tím Quý Phái & Vàng Kim", desc: "Cổ điển, hoàng gia, độc đáo", bg: "bg-purple-900", accent: "bg-yellow-500" },
-                    red: { name: "Đỏ Đậm & Xám Tối", desc: "Năng động, cuốn hút, mạnh mẽ", bg: "bg-red-800", accent: "bg-slate-600" }
+                    red: { name: "Đỏ Đậm & Xám Tối", desc: "Năng động, cuốn hút, mạnh mẽ", bg: "bg-red-800", accent: "bg-slate-600" },
+                    orange: { name: "Cam Đất & Xanh Rừng", desc: "Ấm áp, tự nhiên, đầy sức sống", bg: "bg-orange-600", accent: "bg-green-600" },
+                    navy: { name: "Navy Cổ Điển & Cát Vàng", desc: "Lịch lãm, uy tín, hoàng gia", bg: "bg-sky-950", accent: "bg-yellow-500" },
+                    indigo: { name: "Xanh Chàm & Đào Ấm", desc: "Mơ mộng, thư thái, hiện đại", bg: "bg-indigo-700", accent: "bg-rose-400" },
+                    rose: { name: "Hồng Tro & Than Thép", desc: "Thanh lịch, thời thượng, tinh tế", bg: "bg-rose-700", accent: "bg-slate-500" },
+                    cyan: { name: "Cyan Biển Cả & San Hô", desc: "Khoáng đạt, rực rỡ, năng động", bg: "bg-cyan-700", accent: "bg-orange-500" },
+                    forest: { name: "Xanh Rừng Già & Mật Ong", desc: "Sang trọng, thuần khiết, quý phái", bg: "bg-emerald-900", accent: "bg-amber-400" }
                   }).map(([key, item]) => {
                     const isSelected = infoThemeStyle === key;
                     return (
@@ -1964,11 +1970,11 @@ export default function AdminPanel({
                         }`}
                       >
                         <div>
-                          <div className="font-extrabold text-xs text-slate-800 flex items-center gap-1.5">
-                            {item.name}
-                            {isSelected && <span className="text-[10px] bg-blue-900 text-white px-1.5 py-0.2 rounded-full">Đang dùng</span>}
+                          <div className="font-extrabold text-xs text-slate-800 flex items-center justify-between gap-1.5">
+                            <span className="truncate">{item.name}</span>
+                            {isSelected && <span className="text-[8px] bg-blue-900 text-white px-1.5 py-0.5 rounded-full shrink-0 font-bold">Đang dùng</span>}
                           </div>
-                          <p className="text-[10px] text-slate-400 mt-1 leading-normal">{item.desc}</p>
+                          <p className="text-[10px] text-slate-400 mt-1 leading-normal line-clamp-2">{item.desc}</p>
                         </div>
                         <div className="flex gap-1.5 mt-2">
                           <div className={`w-6 h-3 rounded-md ${item.bg}`} />
