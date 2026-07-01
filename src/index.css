@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Roboto:wght@300;400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--custom-font-sans, Inter, sans-serif);
+  --font-display: var(--custom-font-display, Outfit, sans-serif);
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-primary-50: var(--custom-primary-50, #f0f7ff);
+  --color-primary-100: var(--custom-primary-100, #e0effe);
+  --color-primary-600: var(--custom-primary-600, #0284c7);
+  --color-primary-700: var(--custom-primary-700, #0369a1);
+  --color-primary-800: var(--custom-primary-800, #075985);
+  --color-primary-900: var(--custom-primary-900, #0c4a6e);
+  
+  --color-accent-50: var(--custom-accent-50, #fffaf0);
+  --color-accent-500: var(--custom-accent-500, #f97316);
+  --color-accent-600: var(--custom-accent-600, #ea580c);
+  --color-accent-700: var(--custom-accent-700, #c2410c);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #f8fafc;
+  color: #1e293b;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
+
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: linear-gradient(to right, rgba(148, 163, 184, 0.05) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(148, 163, 184, 0.05) 1px, transparent 1px);
+}

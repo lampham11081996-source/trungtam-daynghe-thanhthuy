@@ -1,0 +1,6 @@
+{
+  "name": "Trung tâm dạy nghề Thanh Thuỷ",
+  "description": "Hệ thống đào tạo và sát hạch lái xe ô tô, xe máy uy tín, chuyên nghiệp. Học và thi thử lý thuyết 600 câu hỏi, tra cứu hồ sơ học viên, đăng ký khóa học trực tuyến.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

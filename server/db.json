@@ -1,0 +1,897 @@
+{
+  "info": {
+    "name": "Trung tâm Dạy nghề Thanh Thuỷ",
+    "address": "Trung tâm dạy nghề Thanh Thuỷ",
+    "hotline": "0988 123 456",
+    "email": "thanhtuydaynghe@example.com",
+    "logo": "/uploads/1782725280603_4v3zmm.jpg",
+    "banner": "/uploads/1782725286544_4emhk8.jpg",
+    "intro": "Trung tâm Dạy nghề Thanh Thuỷ tự hào là đơn vị hàng đầu tại Phú Thọ trong lĩnh vực đào tạo và sát hạch lái xe các hạng từ mô tô đến ô tô (A1, B1, B2, C, D, E...). Với hệ thống sân tập hiện đại đạt tiêu chuẩn quốc gia, dàn xe tập lái đời mới cùng đội ngũ giáo viên tận tâm, giàu kinh nghiệm, chúng tôi cam kết mang lại tỉ lệ đậu cao nhất và kỹ năng lái xe an toàn cho mọi học viên.",
+    "footer": "© 2026 Trung tâm Dạy nghề Thanh Thuỷ. Tất cả quyền được bảo lưu.",
+    "seo_title": "Trung tâm Dạy nghề Thanh Thuỷ - Đào tạo & Sát hạch lái xe ",
+    "seo_description": "Trung tâm dạy nghề Thanh Thuỷ. Đào tạo lái xe ô tô, xe máy hạng A, A1, B, C1, tỉ lệ đỗ vượt trội. Thi thử 600 câu hỏi trực tuyến.",
+    "seo_keywords": "day nghe thanh thuy, hoc lai xe phu tho, sat hach lai xe thanh thuy, thi bang lai b2 phu tho",
+    "themeStyle": "teal",
+    "fontFamily": "system",
+    "subtitle": "ĐÀO TẠO & SÁT HẠCH LÁI XE",
+    "footerSlogan": "CHUYÊN NGHIỆP - TẬN TÂM - CHU ĐÁO",
+    "domain": "daynghelaixethanhthuy.com",
+    "websiteUrl": "https://daynghelaixethanhthuy.com",
+    "introVideoUrl": "",
+    "slides": [
+      {
+        "title": "Học Lái Xe Ô Tô Chuyên Nghiệp",
+        "subtitle": "Tỉ lệ đậu vượt trội - Sân tập cảm biến hiện đại đạt chuẩn quốc gia",
+        "image": "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&q=80&w=1200",
+        "cta": "Đăng ký khóa học",
+        "tab": "courses"
+      },
+      {
+        "title": "Thi Thử Lý Thuyết 600 Câu",
+        "subtitle": "Học trực quan, tự chấm điểm, phân tích lỗi sai và câu hỏi điểm liệt cực dễ",
+        "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=1200",
+        "cta": "Thi Thử 600 Câu",
+        "tab": "exam"
+      },
+      {
+        "title": "Tra Cứu Hồ Sơ Trực Tuyến",
+        "subtitle": "Minh bạch thông tin, tra cứu tiến độ học tập và lịch thi sát hạch bằng CCCD",
+        "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1200",
+        "cta": "Tra cứu hồ sơ",
+        "tab": "lookup"
+      }
+    ],
+    "advantages": [
+      {
+        "title": "Đào tạo chuyên nghiệp",
+        "desc": "Giáo trình đào tạo bài bản chuẩn Sở Giao thông Vận tải."
+      },
+      {
+        "title": "Sân tập hiện đại",
+        "desc": "Sân cảm biến chuẩn quốc gia rộng 2ha đặt tại Thanh Thuỷ."
+      },
+      {
+        "title": "Giáo viên tận tâm",
+        "desc": "Đội ngũ có chứng chỉ sư phạm, kèm cặp nhiệt huyết."
+      },
+      {
+        "title": "Hỗ trợ hồ sơ nhanh",
+        "desc": "Thủ tục đơn giản, chụp ảnh và hỗ trợ khám sức khỏe tại chỗ."
+      }
+    ],
+    "commitments": [
+      "Học viên được tự do sắp xếp lịch tập thực hành phù hợp với lịch cá nhân.",
+      "Học phí công khai trọn gói ngay từ ban đầu, ghi rõ trong hợp đồng đào tạo pháp lý.",
+      "Hỗ trợ thực hành dã ngoại sa hình dốc cầu dã ngoại tới khi nhuần nhuyễn."
+    ],
+    "aboutTitle": "Hành Trình Kiến Tạo Những Hành Trình An Toàn",
+    "aboutYears": "10+",
+    "aboutDesc1": "Được thành lập với sứ mệnh phổ cập kỹ năng điều khiển phương tiện giao thông an toàn và chuyên nghiệp, Trung tâm Dạy nghề Thanh Thuỷ đã trở thành điểm đến tin cậy của hơn 15.000 học viên tại Phú Thọ và các tỉnh lân cận. Chúng tôi tự hào sở hữu quy trình đào tạo đồng bộ, chú trọng thực hành kỹ năng xử lý tình huống khẩn cấp hơn là việc học thuộc lòng máy móc.",
+    "aboutDesc2": "Với quy mô rộng hơn 2 hecta đặt ngay tại trung tâm huyện Thanh Thuỷ, sân sát hạch sa hình của chúng tôi đạt chuẩn ISO của Bộ Giao Thông Vận Tải, bao gồm toàn bộ 11 bài thi sát hạch liên hoàn như vệt bánh xe, đường vòng quanh co, ghép xe dọc ghép xe ngang, dừng và khởi hành xe ngang dốc thiết kế cảm biến 100% giống như ngày thi thật.",
+    "aboutFeatures": [
+      {
+        "title": "100% xe đời mới",
+        "desc": "Dàn xe Toyota Vios, Chevrolet Cruze lắp điều hòa mát mẻ suốt buổi học."
+      },
+      {
+        "title": "Giáo viên tâm huyết",
+        "desc": "Nói không với tiêu cực, không quát mắng, dạy kèm 1:1 tận tâm."
+      },
+      {
+        "title": "Học phí trọn gói cứng",
+        "desc": "Không phát sinh tiền xăng xe, bồi dưỡng hay thuê sân dã ngoại."
+      },
+      {
+        "title": "Thi tốt nghiệp nhanh",
+        "desc": "Lịch thi sát hạch diễn ra liên tục hàng tháng, không bị dồn khóa."
+      }
+    ],
+    "facilities": [
+      {
+        "title": "Sân Tập Sa Hình Cảm Biến",
+        "desc": "Được đổ bê tông nhựa nóng phẳng phiu, trang bị hệ thống cảm biến hồng ngoại chấm điểm tự động chấm dứt tình trạng chấm điểm cảm tính.",
+        "image": "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&q=80&w=400"
+      },
+      {
+        "title": "Phòng Máy Tính Thi Lý Thuyết",
+        "desc": "Hệ thống 40 máy tính đồng bộ cấu hình cao, cài đặt phần mềm thi sát hạch chuẩn của Bộ Giao thông Vận tải phục vụ học viên ôn thi 24/7.",
+        "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=400"
+      },
+      {
+        "title": "Cabin Đào Tạo Học Lái Điện Tử",
+        "desc": "Hệ thống cabin mô phỏng tình huống lái xe 3D thực tế ảo dã ngoại, giúp học viên làm quen cảm giác lái địa hình đèo dốc sương mù trước khi nhận xe thật.",
+        "image": "https://images.unsplash.com/photo-1506015391300-4802dc74de2e?auto=format&fit=crop&q=80&w=400"
+      }
+    ],
+    "teachers": [
+      {
+        "name": "Thầy Nguyễn Minh Đức",
+        "role": "Trưởng ban huấn luyện B2",
+        "quote": "Lái xe an toàn không chỉ là nắm luật, mà là thói quen nhường nhịn trên đường phố.",
+        "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=200"
+      },
+      {
+        "name": "Cô Lê Thu Hà",
+        "role": "Giáo viên lý thuyết B1",
+        "quote": "Giúp học viên ghi nhớ 600 câu bằng các phương pháp liên kết thực tế cực kỳ sinh động.",
+        "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=200"
+      },
+      {
+        "name": "Thầy Trần Văn Cường",
+        "role": "Giáo viên thực hành Hạng C",
+        "quote": "Rèn luyện ý thức trách nhiệm và sự kiên nhẫn khi cầm lái những dòng xe tải trọng lớn.",
+        "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200"
+      },
+      {
+        "name": "Thầy Hoàng Quốc Anh",
+        "role": "Giảng viên đường trường",
+        "quote": "Hướng dẫn tỉ mỉ kỹ thuật lái dã ngoại dốc cua, sương mù giúp nâng cao phản xạ tự nhiên.",
+        "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200"
+      }
+    ],
+    "qualityCommitmentTitle": "Cam Kết Chất Lượng Đào Tạo",
+    "qualityCommitmentDesc": "Chúng tôi luôn tâm niệm lấy sự an toàn và thành công của học viên làm trọng tâm phát triển. Trung tâm dạy nghề Thanh Thuỷ cam kết thực thi nghiêm ngặt 3 KHÔNG:",
+    "qualityCommitments": [
+      "KHÔNG quát mắng: Luôn duy trì thái độ ôn hòa, lịch thiệp, tôn trọng học viên suốt buổi học.",
+      "KHÔNG bồi dưỡng thêm: Toàn bộ chi phí xăng xe sân tập dã ngoại đã bao gồm, nghiêm cấm giáo viên thu thêm.",
+      "KHÔNG dạy tắt: Dạy đủ bài, đủ giờ, đủ số kilomet dã ngoại đường trường theo đúng giáo trình của Bộ."
+    ],
+    "legalTitle": "Hồ Sơ Pháp Lý Độc Lập",
+    "legalDesc": "Trung tâm dạy nghề Thanh Thuỷ được thành lập và hoạt động dưới sự cấp phép, giám sát chặt chẽ của Sở Giao Thông Vận Tải tỉnh Phú Thọ. Toàn bộ hồ sơ thi sát hạch đều là hồ sơ gốc, học viên có quyền tự do kiểm tra và lưu giữ thông tin học tập của mình minh bạch trên cơ sở dữ liệu hệ thống quốc gia.",
+    "legalBadge": "Đạt danh hiệu \"Đơn vị Đào tạo Lái xe xuất sắc tỉnh Phú Thọ\" liên tiếp nhiều năm liền.",
+    "legalFooter": "Giấy phép hoạt động số 4122/GP-SGTVT cấp phép bởi Sở Giao Thông Vận Tải Phú Thọ.",
+    "footerDesc": "",
+    "footerTag1": "",
+    "footerTag2": "Đạt chuẩn kỹ thuật quốc gia về Trung tâm sát hạch",
+    "zalo": "0988123456",
+    "googleMapUrl": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2023.5594813936787!2d105.28754811754581!3d21.097408127021218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313463c83064af51%3A0xa61672cbbe571ffa!2zVHJ1bmcgVMOibSBE4bqheSBOZ2jhu4EgVGhhbmggVGjhu6d5!5e1!3m2!1svi!2s!4v1782813643362!5m2!1svi!2s\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"strict-origin-when-cross-origin\"></iframe>",
+    "testimonials": [
+      {
+        "name": "Anh Hoàng Lâm (Học viên B2)",
+        "text": "Tôi cực kỳ hài lòng với sân tập cảm biến của trung tâm. Thầy Đức dạy rất tỉ mỉ, không hề cáu gắt quát mắng. Nhờ trung tâm mà tôi đã thi đậu ngay từ lần đầu tiên với số điểm sa hình 95/100.",
+        "score": 5,
+        "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=100"
+      },
+      {
+        "name": "Chị Thảo Nguyên (Học viên B1)",
+        "text": "Lịch học tự chọn rất linh hoạt nên một nhân viên văn phòng bận rộn như tôi cũng có thể dễ dàng theo học vào cuối tuần. Xe tập lái Vios 100% đời mới sạch sẽ mát mẻ, giáo viên kèm 1:1 siêu tận tâm.",
+        "score": 5,
+        "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=100"
+      },
+      {
+        "name": "Chú Tiến Thành (Học viên nâng Hạng D)",
+        "text": "Hồ sơ pháp lý của trung tâm Thanh Thuỷ rất rõ ràng, cam kết trọn gói là trọn gói thật, không hề có chuyện thu thêm bồi dưỡng hay phụ phí xăng dầu. Rất uy tín và đáng tin cậy tại Phú Thọ.",
+        "score": 5,
+        "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100"
+      }
+    ]
+  },
+  "courses": [
+    {
+      "id": "B.01",
+      "name": "Khóa học Lái xe Ô tô Hạng B1 (Số tự động)",
+      "fee": 14500000,
+      "duration": "3.0 tháng",
+      "requirements": "Đủ 18 tuổi trở lên, đủ sức khỏe lái xe theo quy định.",
+      "description": "Đào tạo lái xe ô tô số tự động chở người đến 9 chỗ ngồi; xe tải số tự động có trọng tải thiết kế dưới 3.500 kg. Người có bằng B1 không được hành nghề lái xe kinh doanh.",
+      "documents": "Đơn đăng ký, bản sao CCCD (không cần công chứng), 10 ảnh 3x4 nền xanh, giấy khám sức khỏe lái xe.",
+      "featured": true,
+      "status": "active",
+      "image": "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&q=80&w=600"
+    },
+    {
+      "id": "B",
+      "name": "Khóa học Lái xe Ô tô Hạng B2 (Số sàn)",
+      "fee": 15500000,
+      "duration": "3.5 tháng",
+      "requirements": "Đủ 18 tuổi trở lên, đủ sức khỏe lái xe theo quy định.",
+      "description": "Đào tạo lái xe ô tô số sàn từ 4 đến 9 chỗ ngồi, xe tải dưới 3.500 kg. Hạng B2 cho phép hành nghề lái xe taxi, xe công nghệ, lái xe kinh doanh vận tải.",
+      "documents": "Đơn đăng ký, bản sao CCCD (không cần công chứng), 10 ảnh 3x4 nền xanh, giấy khám sức khỏe lái xe.",
+      "featured": true,
+      "status": "active",
+      "image": "https://images.unsplash.com/photo-1506015391300-4802dc74de2e?auto=format&fit=crop&q=80&w=600"
+    },
+    {
+      "id": "C1",
+      "name": "Khóa học Lái xe Tải Hạng C",
+      "fee": 18500000,
+      "duration": "5.0 tháng",
+      "requirements": "Đủ 21 tuổi trở lên, đủ sức khỏe lái xe tải theo quy định.",
+      "description": "Đào tạo lái xe ô tô tải, máy kéo có trọng tải thiết kế từ 3.500 kg trở lên và các loại xe quy định cho giấy phép lái xe hạng B1, B2.",
+      "documents": "Đơn đăng ký, bản sao CCCD, 10 ảnh 3x4 nền xanh, giấy khám sức khỏe lái xe hạng C.",
+      "featured": true,
+      "status": "active",
+      "image": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80&w=600"
+    },
+    {
+      "id": "A",
+      "name": "Khóa học Nâng Hạng Giấy Phép Lái Xe Hạng D",
+      "fee": 9500000,
+      "duration": "2.0 tháng",
+      "requirements": "Đủ 24 tuổi trở lên, có bằng B2 (kinh nghiệm 5 năm) hoặc C (kinh nghiệm 3 năm), tốt nghiệp THCS trở lên.",
+      "description": "Đào tạo nâng hạng từ B2 hoặc C lên hạng D để lái xe chở người từ 10 đến 30 chỗ ngồi và các loại xe quy định cho các hạng B1, B2, C.",
+      "documents": "Đơn nâng hạng, bản sao CCCD, bản sao bằng lái xe hiện tại, bản sao bằng tốt nghiệp THCS trở lên, ảnh 3x4 nền xanh.",
+      "featured": true,
+      "status": "active",
+      "image": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&q=80&w=600"
+    },
+    {
+      "id": "A1",
+      "name": "Tập lái xe mô tô hạng A1",
+      "fee": 0,
+      "duration": "3 tháng",
+      "requirements": "Đủ 18 tuổi trở lên, đủ sức khỏe tập lái xe",
+      "description": "",
+      "documents": "CCCD photo, 6 ảnh 3x4 nền xanh",
+      "image": "",
+      "featured": true,
+      "status": "active"
+    }
+  ],
+  "schedules": [
+    {
+      "id": "SCH001",
+      "date": "2026-07-05",
+      "class": "Hạng B1 & B2",
+      "subject": "Học lý thuyết Luật Giao thông Đường bộ (Buổi sáng)",
+      "location": "Phòng học lý thuyết tầng 2, Trung tâm dạy nghề Thanh Thuỷ",
+      "notes": "Học viên mang theo tài liệu 600 câu và bút viết."
+    },
+    {
+      "id": "SCH002",
+      "date": "2026-07-08",
+      "class": "Hạng B2 - Khóa 34K",
+      "subject": "Tập lái xe sa hình trong sân (Nhận xe tập)",
+      "location": "Sân tập lái xe trung tâm Thanh Thuỷ",
+      "notes": "Liên hệ trực tiếp với giáo viên hướng dẫn trước khi đến."
+    },
+    {
+      "id": "SCH003",
+      "date": "2026-07-12",
+      "class": "Hạng C - Khóa 12C",
+      "subject": "Kiểm tra lý thuyết & Cabin mô phỏng",
+      "location": "Phòng máy tính tầng 1 & Cabin điện tử",
+      "notes": "Kiểm tra điều kiện để thi sát hạch."
+    },
+    {
+      "id": "SCH004",
+      "date": "2026-07-20",
+      "class": "Tất cả các hạng",
+      "subject": "Thi Sát hạch chính thức từ Sở Giao thông Vận tải",
+      "location": "Trung tâm sát hạch lái xe Thanh Thuỷ",
+      "notes": "Học viên mang theo CCCD bản gốc và bằng lái xe máy (nếu có)."
+    }
+  ],
+  "students": [
+    {
+      "id": "HV0001",
+      "name": "Nguyễn Văn Hùng",
+      "phone": "0912345678",
+      "dob": "1995-10-15",
+      "identity": "123456789012",
+      "address": "Thị trấn Thanh Thuỷ, Phú Thọ",
+      "class": "B2",
+      "teacher": "Thầy Nguyễn Minh Đức",
+      "status": "Đang học",
+      "notes": "Hồ sơ đầy đủ, đã nộp học phí đợt 1."
+    },
+    {
+      "id": "HV0002",
+      "name": "Trần Thị Mai",
+      "phone": "0987654321",
+      "dob": "1998-05-20",
+      "identity": "987654321012",
+      "address": "Xã Đoan Hùng, Phú Thọ",
+      "class": "B1",
+      "teacher": "Cô Lê Thu Hà",
+      "status": "Chờ thi",
+      "notes": "Đã hoàn thành chương trình lý thuyết và thực hành."
+    },
+    {
+      "id": "HV0003",
+      "name": "Phạm Quốc Bảo",
+      "phone": "0905123456",
+      "dob": "1990-12-01",
+      "identity": "111222333444",
+      "address": "Huyện Thanh Sơn, Phú Thọ",
+      "class": "C",
+      "teacher": "Thầy Trần Văn Cường",
+      "status": "Đậu",
+      "notes": "Đạt 40/40 điểm lý thuyết, 95/100 sa hình ngày thi 15/06/2026."
+    },
+    {
+      "id": "HV0004",
+      "name": "Lê Hoàng Long",
+      "phone": "0933445566",
+      "dob": "2001-08-25",
+      "identity": "555666777888",
+      "address": "Thành phố Việt Trì, Phú Thọ",
+      "class": "B2",
+      "teacher": "Thầy Nguyễn Minh Đức",
+      "status": "Mới đăng ký",
+      "notes": "Đăng ký trực tuyến, cần bổ sung giấy khám sức khỏe."
+    }
+  ],
+  "questions": [
+    {
+      "id": "Q001",
+      "question": "Khái niệm 'Làn đường' được hiểu như thế nào là đúng?",
+      "options": [
+        "A. Là một phần của phần đường xe chạy được chia theo chiều dọc của đường, có bề rộng đủ cho xe chạy an toàn.",
+        "B. Là đường phố được phân bổ nhiều phương tiện lưu thông công cộng.",
+        "C. Là một phần của phần đường xe chạy được chia theo chiều dọc của đường, có sử dụng làn đường để đậu xe ô tô.",
+        "D. Là toàn bộ bề rộng của mặt đường quốc lộ hoặc tỉnh lộ."
+      ],
+      "answer": "A",
+      "explanation": "Làn đường phải có đủ bề rộng cho xe chạy an toàn và được chia theo chiều dọc của đường (theo Điều 3 Luật Giao thông đường bộ).",
+      "category": "Khái niệm và quy tắc",
+      "licenseClasses": [
+        "B1",
+        "B2",
+        "C",
+        "D"
+      ],
+      "critical": false,
+      "image": ""
+    },
+    {
+      "id": "Q002",
+      "question": "Cuộc đua xe chỉ được thực hiện khi nào?",
+      "options": [
+        "A. Diễn ra trên đường phố vắng người qua lại vào ban đêm.",
+        "B. Được người dân hai bên đường ủng hộ và cổ vũ nhiệt tình.",
+        "C. Được cơ quan có thẩm quyền cấp phép.",
+        "D. Do các câu lạc bộ xe tự đứng ra tổ chức tự phát."
+      ],
+      "answer": "C",
+      "explanation": "Mọi hành vi đua xe trái phép đều bị nghiêm cấm. Đua xe chỉ được thực hiện khi được cơ quan có thẩm quyền phê duyệt và cấp phép chính thức.",
+      "category": "Khái niệm và quy tắc",
+      "licenseClasses": [
+        "B1",
+        "B2",
+        "C",
+        "D"
+      ],
+      "critical": true,
+      "image": ""
+    },
+    {
+      "id": "Q003",
+      "question": "Người lái xe không được vượt xe khác khi gặp trường hợp nào dưới đây?",
+      "options": [
+        "A. Trên cầu hẹp có một làn xe; nơi đường vòng, đầu dốc và các vị trí có tầm nhìn bị hạn chế.",
+        "B. Trên cầu có từ hai làn xe trở lên; đường quốc lộ bằng phẳng tầm nhìn rộng.",
+        "C. Khi xe phía trước có tín hiệu rẽ phải và đã nhường đường.",
+        "D. Khi thời tiết khô ráo, đường thông thoáng không có chướng ngại vật."
+      ],
+      "answer": "A",
+      "explanation": "Đây là hành vi cực kỳ nguy hiểm và bị cấm nhằm đảm bảo an toàn giao thông tại nơi khuất tầm nhìn, cầu hẹp.",
+      "category": "Khái niệm và quy tắc",
+      "licenseClasses": [
+        "B1",
+        "B2",
+        "C",
+        "D"
+      ],
+      "critical": true,
+      "image": ""
+    },
+    {
+      "id": "Q004",
+      "question": "Biển nào dưới đây báo hiệu 'Giao nhau với đường ưu tiên'?",
+      "options": [
+        "A. Biển 1 (Hình tam giác đều đỉnh hướng lên trên, viền đỏ, nền vàng).",
+        "B. Biển 2 (Hình tam giác ngược, đỉnh hướng xuống dưới, viền đỏ, nền vàng).",
+        "C. Biển 3 (Hình thoi màu vàng viền trắng xanh).",
+        "D. Cả ba biển trên."
+      ],
+      "answer": "B",
+      "explanation": "Biển 2 (tam giác ngược) biểu thị xe đang chạy trên đường không ưu tiên chuẩn bị giao nhau với đường ưu tiên, buộc phải nhường đường.",
+      "category": "Hệ thống biển báo",
+      "licenseClasses": [
+        "B1",
+        "B2",
+        "C",
+        "D"
+      ],
+      "critical": false,
+      "image": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&q=80&w=200"
+    },
+    {
+      "id": "Q005",
+      "question": "Khi gặp biển nào dưới đây, người lái xe phải nhường đường cho người đi bộ?",
+      "options": [
+        "A. Biển 1 (Hình vuông màu xanh, có hình người đi bộ màu đen trên nền trắng).",
+        "B. Biển 2 (Hình tròn viền đỏ nền trắng, có hình người đi bộ màu đen chéo đỏ).",
+        "C. Biển 3 (Hình tròn xanh nền trắng vẽ trẻ em đi bộ).",
+        "D. Cả ba biển."
+      ],
+      "answer": "A",
+      "explanation": "Biển 1 báo hiệu vị trí dành cho người đi bộ sang đường, các phương tiện phải chú ý giảm tốc độ và nhường đường.",
+      "category": "Hệ thống biển báo",
+      "licenseClasses": [
+        "B1",
+        "B2",
+        "C",
+        "D"
+      ],
+      "critical": false,
+      "image": "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&q=80&w=200"
+    },
+    {
+      "id": "Q006",
+      "question": "Tại nơi đường giao nhau không có báo hiệu đi theo vòng xuyến, người điều khiển phương tiện phải nhường đường như thế nào là đúng quy tắc giao thông?",
+      "options": [
+        "A. Phải nhường đường cho xe đi đến từ bên trái.",
+        "B. Phải nhường đường cho xe đi đến từ bên phải.",
+        "C. Xe nào có tốc độ lớn hơn thì được ưu tiên đi trước.",
+        "D. Phải nhường đường cho xe lớn hơn."
+      ],
+      "answer": "B",
+      "explanation": "Tại ngã tư không có vòng xuyến, quy tắc nhường đường là phải nhường cho xe đi đến từ bên phải của mình.",
+      "category": "Khái niệm và quy tắc",
+      "licenseClasses": [
+        "B1",
+        "B2",
+        "C",
+        "D"
+      ],
+      "critical": false,
+      "image": ""
+    },
+    {
+      "id": "Q007",
+      "question": "Người điều khiển xe mô tô hai bánh, xe gắn máy có được phép đi xe dàn hàng ngang, đi xe vào phần đường dành cho người đi bộ không?",
+      "options": [
+        "A. Được phép đi nếu đường vắng.",
+        "B. Chỉ được phép khi có cảnh sát giao thông cho phép.",
+        "C. Tuyệt đối không được phép.",
+        "D. Được phép đi vào lúc trời mưa to để tránh ngập nước."
+      ],
+      "answer": "C",
+      "explanation": "Đây là hành vi bị cấm vì lấn chiếm làn đường của người đi bộ và gây ùn tắc, mất an toàn giao thông.",
+      "category": "Khái niệm và quy tắc",
+      "licenseClasses": [
+        "B1",
+        "B2",
+        "C",
+        "D"
+      ],
+      "critical": true,
+      "image": ""
+    },
+    {
+      "id": "Q008",
+      "question": "Độ tuổi tối thiểu của người lái xe ô tô chở người từ 10 đến 30 chỗ ngồi (hạng D) là bao nhiêu tuổi?",
+      "options": [
+        "A. Đủ 18 tuổi.",
+        "B. Đủ 21 tuổi.",
+        "C. Đủ 24 tuổi.",
+        "D. Đủ 27 tuổi."
+      ],
+      "answer": "C",
+      "explanation": "Theo Luật Giao thông đường bộ, lái xe hạng D quy định tuổi tối thiểu là đủ 24 tuổi trở lên.",
+      "category": "Khái niệm và quy tắc",
+      "licenseClasses": [
+        "D"
+      ],
+      "critical": false,
+      "image": ""
+    },
+    {
+      "id": "Q009",
+      "question": "Xe nào được quyền đi trước trong trường hợp sa hình này?",
+      "options": [
+        "A. Xe cứu hỏa đang đi làm nhiệm vụ.",
+        "B. Xe cứu thương đang chở bệnh nhân.",
+        "C. Xe công an dẫn đoàn.",
+        "D. Xe quân sự hành quân chiến đấu."
+      ],
+      "answer": "A",
+      "explanation": "Thứ tự xe ưu tiên cao nhất theo luật giao thông: Xe cứu hỏa > Xe quân sự, Xe công an > Xe cứu thương.",
+      "category": "Giải thế sa hình",
+      "licenseClasses": [
+        "B1",
+        "B2",
+        "C",
+        "D"
+      ],
+      "critical": false,
+      "image": "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&q=80&w=200"
+    },
+    {
+      "id": "Q010",
+      "question": "Hành vi sử dụng rượu, bia khi lái xe ô tô bị xử lý như thế nào?",
+      "options": [
+        "A. Chỉ bị nhắc nhở nếu không gây tai nạn giao thông.",
+        "B. Bị xử phạt hành chính nghiêm khắc hoặc có thể bị xử lý hình sự tùy theo mức độ vi phạm nồng độ cồn.",
+        "C. Được lái xe bình thường nếu cảm thấy vẫn tỉnh táo.",
+        "D. Chỉ bị phạt nếu nồng độ cồn vượt quá 100 miligam/100 mililit máu."
+      ],
+      "answer": "B",
+      "explanation": "Theo Nghị định 100 và Luật phòng chống tác hại rượu bia, nghiêm cấm hoàn toàn hành vi điều khiển xe khi có nồng độ cồn trong máu hoặc hơi thở.",
+      "category": "Khái niệm và quy tắc",
+      "licenseClasses": [
+        "B1",
+        "B2",
+        "C",
+        "D"
+      ],
+      "critical": true,
+      "image": ""
+    }
+  ],
+  "news": [
+    {
+      "id": "NEWS001",
+      "title": "Thông báo tuyển sinh khóa đào tạo lái xe ô tô Hạng B1, B2 và C mới nhất tháng này",
+      "category": "Tuyển sinh",
+      "summary": "Trung tâm Dạy nghề Thanh Thuỷ chính thức mở cổng đăng ký lớp học lái xe ô tô khóa mới nhất trong tháng này. Ưu đãi giảm ngay 1.000.000đ học phí cho học viên đăng ký nhóm từ 3 người.",
+      "content": "### CHƯƠNG TRÌNH TUYỂN SINH MỚI NHẤT\n\nNhằm đáp ứng nhu cầu học lái xe ngày càng tăng, **Trung tâm Dạy nghề Thanh Thuỷ** trân trọng thông báo khai giảng các lớp đào tạo lái xe ô tô tiêu chuẩn chất lượng cao:\n\n* **Hạng B1 (Số tự động):** Học phí trọn gói 14.500.000đ. Phù hợp cho cá nhân chỉ lái xe gia đình, thủ tục tinh gọn.\n* **Hạng B2 (Số sàn):** Học phí trọn gói 15.500.000đ. Phù hợp cho những ai muốn hành nghề lái xe taxi, lái xe kinh doanh vận tải.\n* **Hạng C (Xe tải trên 3.5 tấn):** Học phí trọn gói 18.500.000đ. Dành cho người có nhu cầu lái xe chở hàng tải trọng lớn.\n\n#### Quyền lợi vượt trội khi học tại Thanh Thuỷ:\n1. Học phí công khai, cam kết không phát sinh bất kỳ khoản phí phụ nào trong suốt quá trình học.\n2. Sân tập lái chuẩn quốc gia rộng hơn 2 ha với đầy đủ 11 bài thi sát hạch thực tế.\n3. Xe tập lái 100% đời mới, có máy lạnh hoạt động đầy đủ.\n4. Thời gian học linh động: Học viên tự sắp xếp lịch học phù hợp với thời gian cá nhân (học cả Thứ Bảy, Chủ Nhật không thu thêm phí).\n\n#### Hồ sơ đăng ký cần chuẩn bị:\n- 01 Bản sao CMND/CCCD (không cần công chứng).\n- 10 Ảnh thẻ cỡ 3x4 nền màu xanh đậm.\n- Giấy khám sức khỏe lái xe do bệnh viện tuyến huyện trở lên cấp.\n\nHọc viên có nhu cầu vui lòng liên hệ hotline **0988 123 456** hoặc đến trực tiếp văn phòng tại trung tâm để đăng ký nhập học.",
+      "date": "2026-06-25",
+      "author": "Ban Tuyển Sinh",
+      "status": "published",
+      "image": "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&q=80&w=600"
+    },
+    {
+      "id": "NEWS002",
+      "title": "Lịch thi sát hạch cấp giấy phép lái xe chính thức tháng 07/2026",
+      "category": "Lịch thi",
+      "summary": "Sở Giao thông Vận tải tỉnh Phú Thọ phối hợp cùng Trung tâm Thanh Thuỷ công bố lịch thi sát hạch lý thuyết và thực hành chính thức trong tháng 07/2026.",
+      "content": "### LỊCH THI SÁT HẠCH THÁNG 07 NĂM 2026\n\nTrung tâm Dạy nghề Thanh Thuỷ thông báo lịch thi sát hạch cấp Giấy phép lái xe chính thức được Sở Giao thông Vận tải tỉnh Phú Thọ phê duyệt như sau:\n\n* **Đợt 1: Ngày 10/07/2026 (Thứ Sáu)** - Dành cho học viên nâng hạng D, E và bổ túc hồ sơ tồn đọng.\n* **Đợt 2: Ngày 20/07/2026 (Thứ Hai)** - Dành cho khóa học viên Hạng B1, B2 lý thuyết và thực hành sa hình sa khố.\n* **Đợt 3: Ngày 28/07/2026 (Thứ Ba)** - Dành cho khóa học viên Hạng C và thi lại các hạng.\n\n#### Quy trình thi sát hạch:\n1. **Phần 1: Thi lý thuyết trên máy vi tính.** Đạt tối thiểu số câu theo hạng bằng quy định (B1: 26/30, B2: 32/35, C: 36/40, D: 38/40). Lưu ý không sai câu hỏi điểm liệt.\n2. **Phần 2: Thi phần mềm mô phỏng tình huống giao thông.** Đạt tối thiểu 35/50 điểm.\n3. **Phần 3: Thi thực hành sa hình.** Đạt tối thiểu 80/100 điểm.\n4. **Phần 4: Thi thực hành lái xe trên đường trường.** Đạt tối thiểu 80/100 điểm.\n\n#### Lưu ý quan trọng cho thí sinh:\n- Có mặt tại sân thi lúc **07:00 sáng** để làm thủ tục nhận số báo danh.\n- Mang theo **CCCD gốc** (hoặc Hộ chiếu còn hạn sử dụng).\n- Trang phục lịch sự, chỉnh tề, đi giày quai hậu hoặc giày thể thao (không đi dép lê).\n\nChúc toàn thể các học viên bình tĩnh, tự tin và hoàn thành xuất sắc bài thi của mình!",
+      "date": "2026-06-20",
+      "author": "Hội đồng Sát hạch",
+      "status": "published",
+      "image": "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&q=80&w=600"
+    },
+    {
+      "id": "NEWS003",
+      "title": "Mẹo học nhanh 600 câu lý thuyết lái xe ô tô đạt kết quả tuyệt đối 100%",
+      "category": "Tài liệu",
+      "summary": "Chia sẻ kinh nghiệm và các mẹo ghi nhớ từ khóa quan trọng giúp học viên dễ dàng vượt qua phần thi lý thuyết 600 câu hỏi trong thời gian ngắn nhất.",
+      "content": "### HƯỚNG DẪN MẸO HỌC NHANH LÝ THUYẾT 600 CÂU\n\nPhần thi lý thuyết lái xe ô tô 600 câu thường khiến nhiều học viên cảm thấy áp lực bởi số lượng câu hỏi lớn và nhiều chi tiết pháp lý phức tạp. Dưới đây là các **mẹo cốt lõi** được các giáo viên dày dặn kinh nghiệm tại Trung tâm Thanh Thuỷ đúc kết giúp bạn ôn tập cực nhanh:\n\n#### 1. Nhóm câu hỏi có từ khóa 'Bị nghiêm cấm' hoặc 'Không được'\n* Gần như 100% các câu hỏi có đáp án chứa cụm từ **'Bị nghiêm cấm'**, **'Không được phép'**, **'Không được...'** ở đầu câu đều là đáp án ĐÚNG. Gặp những câu hỏi này, bạn có thể tự tin chọn ngay đáp án này mà không cần suy nghĩ quá lâu (thường đây cũng là những câu hỏi điểm liệt cần đặc biệt chú ý).\n\n#### 2. Nhóm câu hỏi về tốc độ tối đa trong và ngoài khu vực đông dân cư\n* Hãy ghi nhớ quy tắc 'xe con - xe tải - xe khách':\n  * Trong khu đông dân cư, tốc độ tối đa là **60 km/h** đối với đường đôi có dải phân cách giữa, **50 km/h** đối với đường hai chiều không có dải phân cách.\n  * Ngoài khu đông dân cư: Tốc độ tối đa ứng với các loại xe giảm dần từ 90 - 80 - 70 - 60 km/h theo thứ tự: Xe ô tô con -> Xe chở người trên 30 chỗ -> Xe tải trên 3.5 tấn -> Xe đầu kéo sơ mi rơ moóc.\n\n#### 3. Mẹo giải sa hình nhanh chóng bằng quy tắc 5 bước:\n1. **Bước 1 (Xe vào giao lộ):** Xe nào đã vượt quá vạch sơn ngã tư trước được đi trước.\n2. **Bước 2 (Xe ưu tiên):** Thứ tự Hỏa -> Quân -> Công -> Thương (Cứu hỏa, Quân sự, Công an, Cứu thương).\n3. **Bước 3 (Đường ưu tiên):** Xe nằm trên trục đường có biển báo ưu tiên được đi trước.\n4. **Bước 4 (Quyền bên phải không vướng):** Xe nào bên phải trống được đi trước.\n5. **Bước 5 (Hướng rẽ ưu tiên):** Rẽ phải đi trước -> Đi thẳng -> Rẽ trái đi sau cùng.\n\nBạn có thể thử sức trực tiếp với bộ đề thi ngẫu nhiên tại **mục Thi Thử 600 Câu** ngay trên website của trung tâm để kiểm tra trình độ thực tế của mình!",
+      "date": "2026-06-15",
+      "author": "Thầy Nguyễn Minh Đức",
+      "status": "published",
+      "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=600"
+    }
+  ],
+  "documents": [
+    {
+      "id": "DOC001",
+      "name": "Tài liệu học 600 câu hỏi Lý thuyết Luật GTĐB mới nhất",
+      "category": "Lý thuyết 600 câu",
+      "fileUrl": "https://example.com/tai-lieu-600-cau-hoi-ly-thuyet.pdf",
+      "description": "Tập tin PDF tổng hợp đầy đủ 600 câu hỏi kèm đáp án giải thích chi tiết, đánh dấu rõ ràng 60 câu điểm liệt không được làm sai.",
+      "downloads": 1250
+    },
+    {
+      "id": "DOC002",
+      "name": "Bảng tra cứu ý nghĩa hệ thống Biển báo Giao thông Việt Nam",
+      "category": "Biển báo giao thông",
+      "fileUrl": "https://example.com/he-thong-bien-bao-viet-nam.pdf",
+      "description": "Bản in màu chất lượng cao hiển thị tất cả các loại biển báo: biển báo cấm, biển báo nguy hiểm, biển hiệu lệnh, biển chỉ dẫn, biển phụ.",
+      "downloads": 840
+    },
+    {
+      "id": "DOC003",
+      "name": "Cẩm nang hướng dẫn mẹo thi 120 tình huống mô phỏng",
+      "category": "Tài liệu mô phỏng",
+      "fileUrl": "https://example.com/cam-nang-120-tinh-huong-mo-phong.pdf",
+      "description": "Tổng hợp điểm căn, thời gian bấm phím SPACE (khoảng thời gian 5 điểm) cho từng tình huống nguy hiểm chi tiết, dễ thuộc.",
+      "downloads": 990
+    }
+  ],
+  "albums": [
+    {
+      "id": "ALB001",
+      "title": "Hệ thống sân tập lái xe Thanh Thuỷ chuẩn Quốc Gia rộng 2 hecta",
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&q=80&w=800",
+      "sortOrder": 1
+    },
+    {
+      "id": "ALB002",
+      "title": "Dàn xe tập lái hạng B1, B2 đời mới trang bị điều hoà 100%",
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&q=80&w=800",
+      "sortOrder": 2
+    },
+    {
+      "id": "ALB003",
+      "title": "Học viên xuất sắc nhận bằng lái xe sau kì thi sát hạch",
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800",
+      "sortOrder": 3
+    },
+    {
+      "id": "ALB004",
+      "title": "Video giới thiệu toàn cảnh Trung tâm dạy nghề Thanh Thuỷ",
+      "type": "video",
+      "url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "sortOrder": 4
+    }
+  ],
+  "contacts": [
+    {
+      "id": "CON001",
+      "name": "Phạm Minh Hoàng",
+      "phone": "0944555666",
+      "email": "minhhoang@example.com",
+      "subject": "Tư vấn khóa học B2 cho người bận rộn",
+      "message": "Tôi làm việc giờ hành chính từ T2 đến T6, muốn hỏi học phí hạng B2 trọn gói và có thể xếp lịch học vào T7, CN không?",
+      "date": "2026-06-28",
+      "status": "Đã xử lý",
+      "notes": "Đã gọi điện tư vấn trực tiếp, học viên đồng ý đăng ký học vào Thứ Bảy."
+    },
+    {
+      "id": "CON002",
+      "name": "Vũ Thị Cẩm Tú",
+      "phone": "0977888999",
+      "email": "camtu@example.com",
+      "subject": "Hỏi về lịch khai giảng hạng B1 tiếp theo",
+      "message": "Cho em hỏi lịch khai giảng khóa học lái xe số tự động B1 tiếp theo là ngày nào ạ? Em muốn đăng ký học luôn.",
+      "date": "2026-06-29",
+      "status": "Chưa xử lý",
+      "notes": ""
+    }
+  ],
+  "logs": [
+    {
+      "id": "LOG1782899656437mkf",
+      "time": "2026-07-01T09:54:16.437Z",
+      "user": "admin",
+      "action": "Đăng nhập hệ thống quản trị (Quản Trị Viên)"
+    },
+    {
+      "id": "LOG1782814322646xwz",
+      "time": "2026-06-30T10:12:02.647Z",
+      "user": "admin",
+      "action": "Đăng nhập hệ thống quản trị (Quản Trị Viên)"
+    },
+    {
+      "id": "LOG178281417994275o",
+      "time": "2026-06-30T10:09:39.942Z",
+      "user": "admin",
+      "action": "Cập nhật thông tin cấu hình trung tâm"
+    },
+    {
+      "id": "LOG1782814173724rwl",
+      "time": "2026-06-30T10:09:33.724Z",
+      "user": "admin",
+      "action": "Cập nhật thông tin cấu hình trung tâm"
+    },
+    {
+      "id": "LOG178281417096036u",
+      "time": "2026-06-30T10:09:30.960Z",
+      "user": "admin",
+      "action": "Cập nhật thông tin cấu hình trung tâm"
+    },
+    {
+      "id": "LOG1782814116332u7x",
+      "time": "2026-06-30T10:08:36.332Z",
+      "user": "admin",
+      "action": "Đăng nhập hệ thống quản trị (Quản Trị Viên)"
+    },
+    {
+      "id": "LOG1782813999182duy",
+      "time": "2026-06-30T10:06:39.182Z",
+      "user": "admin",
+      "action": "Đăng xuất hệ thống quản trị"
+    },
+    {
+      "id": "LOG17828139732707ho",
+      "time": "2026-06-30T10:06:13.270Z",
+      "user": "admin",
+      "action": "Đăng nhập hệ thống quản trị (Quản Trị Viên)"
+    },
+    {
+      "id": "LOG1782813674608pta",
+      "time": "2026-06-30T10:01:14.608Z",
+      "user": "admin",
+      "action": "Cập nhật thông tin cấu hình trung tâm"
+    },
+    {
+      "id": "LOG1782813518586bwq",
+      "time": "2026-06-30T09:58:38.586Z",
+      "user": "admin",
+      "action": "Cập nhật thông tin cấu hình trung tâm"
+    },
+    {
+      "id": "LOG1782813425210jcu",
+      "time": "2026-06-30T09:57:05.210Z",
+      "user": "admin",
+      "action": "Cập nhật thông tin cấu hình trung tâm"
+    },
+    {
+      "id": "LOG1782813383365y1r",
+      "time": "2026-06-30T09:56:23.365Z",
+      "user": "admin",
+      "action": "Cập nhật thông tin cấu hình trung tâm"
+    },
+    {
+      "id": "LOG1782813364822q2y",
+      "time": "2026-06-30T09:56:04.822Z",
+      "user": "admin",
+      "action": "Cập nhật thông tin cấu hình trung tâm"
+    },
+    {
+      "id": "LOG1782813121544gk0",
+      "time": "2026-06-30T09:52:01.544Z",
+      "user": "admin",
+      "action": "Cập nhật thông tin cấu hình trung tâm"
+    },
+    {
+      "id": "LOG1782813044234p0q",
+      "time": "2026-06-30T09:50:44.234Z",
+      "user": "admin",
+      "action": "Cập nhật thông tin cấu hình trung tâm"
+    },
+    {
+      "id": "LOG17828129639274g6",
+      "time": "2026-06-30T09:49:23.927Z",
+      "user": "admin",
+      "action": "Cập nhật thông tin cấu hình trung tâm"
+    },
+    {
+      "id": "LOG17828129138963cc",
+      "time": "2026-06-30T09:48:33.896Z",
+      "user": "admin",
+      "action": "Đăng nhập hệ thống quản trị (Quản Trị Viên)"
+    },
+    {
+      "id": "LOG1782811885153ws1",
+      "time": "2026-06-30T09:31:25.153Z",
+      "user": "admin",
+      "action": "Đăng nhập hệ thống quản trị (Quản Trị Viên)"
+    },
+    {
+      "id": "LOG17828112570938y9",
+      "time": "2026-06-30T09:20:57.093Z",
+      "user": "admin",
+      "action": "Đăng nhập hệ thống quản trị (Quản Trị Viên)"
+    },
+    {
+      "id": "LOG1782729569377er5",
+      "time": "2026-06-29T10:39:29.377Z",
+      "user": "admin",
+      "action": "Đăng nhập hệ thống quản trị (Quản Trị Viên)"
+    },
+    {
+      "id": "LOG17827283673514l2",
+      "time": "2026-06-29T10:19:27.351Z",
+      "user": "admin",
+      "action": "Đăng nhập hệ thống quản trị (Quản Trị Viên)"
+    },
+    {
+      "id": "LOG178272762596547b",
+      "time": "2026-06-29T10:07:05.965Z",
+      "user": "admin",
+      "action": "Đăng nhập hệ thống quản trị (Quản Trị Viên)"
+    },
+    {
+      "id": "LOG17827263810833zq",
+      "time": "2026-06-29T09:46:21.083Z",
+      "user": "admin",
+      "action": "Đăng nhập hệ thống quản trị (Quản Trị Viên)"
+    },
+    {
+      "id": "LOG17827260222250t1",
+      "time": "2026-06-29T09:40:22.225Z",
+      "user": "admin",
+      "action": "Đăng nhập hệ thống quản trị (Quản Trị Viên)"
+    },
+    {
+      "id": "LOG17827253421876ex",
+      "time": "2026-06-29T09:29:02.187Z",
+      "user": "admin",
+      "action": "Cập nhật thông tin cấu hình trung tâm"
+    },
+    {
+      "id": "LOG17827252897586jx",
+      "time": "2026-06-29T09:28:09.758Z",
+      "user": "admin",
+      "action": "Cập nhật thông tin cấu hình trung tâm"
+    },
+    {
+      "id": "LOG17827252644519zw",
+      "time": "2026-06-29T09:27:44.451Z",
+      "user": "admin",
+      "action": "Đăng nhập hệ thống quản trị (Quản Trị Viên)"
+    },
+    {
+      "id": "LOG1782725180372zg7",
+      "time": "2026-06-29T09:26:20.372Z",
+      "user": "admin",
+      "action": "Đăng nhập hệ thống quản trị (Quản Trị Viên)"
+    },
+    {
+      "id": "LOG1782724297517umd",
+      "time": "2026-06-29T09:11:37.517Z",
+      "user": "admin",
+      "action": "Cập nhật thông tin cấu hình trung tâm"
+    },
+    {
+      "id": "LOG1782724269536xdg",
+      "time": "2026-06-29T09:11:09.536Z",
+      "user": "admin",
+      "action": "Cập nhật thông tin cấu hình trung tâm"
+    },
+    {
+      "id": "LOG1782724190751rd7",
+      "time": "2026-06-29T09:09:50.751Z",
+      "user": "admin",
+      "action": "Cập nhật thông tin cấu hình trung tâm"
+    },
+    {
+      "id": "LOG1782724172307je6",
+      "time": "2026-06-29T09:09:32.307Z",
+      "user": "admin",
+      "action": "Đăng nhập hệ thống quản trị (Quản Trị Viên)"
+    },
+    {
+      "id": "LOG1782723971901j00",
+      "time": "2026-06-29T09:06:11.901Z",
+      "user": "admin",
+      "action": "Cập nhật thông tin cấu hình trung tâm"
+    },
+    {
+      "id": "LOG17827238772160vx",
+      "time": "2026-06-29T09:04:37.216Z",
+      "user": "admin",
+      "action": "Đăng nhập hệ thống quản trị (Quản Trị Viên)"
+    },
+    {
+      "id": "LOG1782723626992lq8",
+      "time": "2026-06-29T09:00:26.992Z",
+      "user": "admin",
+      "action": "Đăng nhập hệ thống quản trị (Quản Trị Viên)"
+    },
+    {
+      "id": "LOG1782721928989pyw",
+      "time": "2026-06-29T08:32:08.989Z",
+      "user": "admin",
+      "action": "Cập nhật thông tin cấu hình trung tâm"
+    },
+    {
+      "id": "LOG178272191484135l",
+      "time": "2026-06-29T08:31:54.841Z",
+      "user": "admin",
+      "action": "Đăng nhập hệ thống quản trị (Quản Trị Viên)"
+    },
+    {
+      "id": "LOG001",
+      "time": "2026-06-28T10:30:00.000Z",
+      "user": "admin",
+      "action": "Đăng nhập hệ thống quản trị"
+    },
+    {
+      "id": "LOG002",
+      "time": "2026-06-28T11:15:22.000Z",
+      "user": "admin",
+      "action": "Cập nhật trạng thái học viên HV0003 sang 'Đậu'"
+    },
+    {
+      "id": "LOG003",
+      "time": "2026-06-29T02:05:10.000Z",
+      "user": "admin",
+      "action": "Thêm liên hệ mới từ website: Vũ Thị Cẩm Tú"
+    }
+  ],
+  "users": [
+    {
+      "username": "admin",
+      "passwordHash": "8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918",
+      "fullName": "Quản Trị Viên",
+      "role": "admin",
+      "email": "admin@thanhthuy.edu.vn"
+    },
+    {
+      "username": "staff",
+      "passwordHash": "8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918",
+      "fullName": "Nhân Viên Tuyển Sinh",
+      "role": "staff",
+      "email": "staff@thanhthuy.edu.vn"
+    }
+  ]
+}
