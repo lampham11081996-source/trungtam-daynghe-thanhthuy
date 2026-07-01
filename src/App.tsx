@@ -30,6 +30,7 @@ export const THEME_PRESETS: Record<string, {
   primary700: string;
   primary800: string;
   primary900: string;
+  primary950: string;
   accent50: string;
   accent500: string;
   accent600: string;
@@ -43,6 +44,7 @@ export const THEME_PRESETS: Record<string, {
     primary700: "#0369a1",
     primary800: "#075985",
     primary900: "#0f172a",
+    primary950: "#090d16",
     accent50: "#fffaf0",
     accent500: "#f97316",
     accent600: "#ea580c",
@@ -56,6 +58,7 @@ export const THEME_PRESETS: Record<string, {
     primary700: "#15803d",
     primary800: "#166534",
     primary900: "#064e3b",
+    primary950: "#022c22",
     accent50: "#fffbeb",
     accent500: "#f59e0b",
     accent600: "#d97706",
@@ -69,6 +72,7 @@ export const THEME_PRESETS: Record<string, {
     primary700: "#0f766e",
     primary800: "#115e59",
     primary900: "#042f2e",
+    primary950: "#021a1e",
     accent50: "#fff1f2",
     accent500: "#f43f5e",
     accent600: "#e11d48",
@@ -82,6 +86,7 @@ export const THEME_PRESETS: Record<string, {
     primary700: "#374151",
     primary800: "#1f2937",
     primary900: "#111827",
+    primary950: "#030712",
     accent50: "#fff1f2",
     accent500: "#ec4899",
     accent600: "#db2777",
@@ -95,6 +100,7 @@ export const THEME_PRESETS: Record<string, {
     primary700: "#7e22ce",
     primary800: "#6b21a8",
     primary900: "#3b0764",
+    primary950: "#240046",
     accent50: "#fefdf0",
     accent500: "#eab308",
     accent600: "#ca8a04",
@@ -108,6 +114,7 @@ export const THEME_PRESETS: Record<string, {
     primary700: "#b91c1c",
     primary800: "#991b1b",
     primary900: "#450a0a",
+    primary950: "#2d0000",
     accent50: "#f8fafc",
     accent500: "#475569",
     accent600: "#334155",
@@ -189,6 +196,7 @@ export default function App() {
     root.style.setProperty('--custom-primary-700', theme.primary700);
     root.style.setProperty('--custom-primary-800', theme.primary800);
     root.style.setProperty('--custom-primary-900', theme.primary900);
+    root.style.setProperty('--custom-primary-950', theme.primary950);
     
     root.style.setProperty('--custom-accent-50', theme.accent50);
     root.style.setProperty('--custom-accent-500', theme.accent500);

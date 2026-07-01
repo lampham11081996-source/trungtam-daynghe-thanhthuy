@@ -11,12 +11,29 @@
   --color-primary-600: var(--custom-primary-600, #0284c7);
   --color-primary-700: var(--custom-primary-700, #0369a1);
   --color-primary-800: var(--custom-primary-800, #075985);
-  --color-primary-900: var(--custom-primary-900, #0c4a6e);
+  --color-primary-900: var(--custom-primary-900, #0f172a);
+  --color-primary-950: var(--custom-primary-950, #090d16);
   
   --color-accent-50: var(--custom-accent-50, #fffaf0);
   --color-accent-500: var(--custom-accent-500, #f97316);
   --color-accent-600: var(--custom-accent-600, #ea580c);
   --color-accent-700: var(--custom-accent-700, #c2410c);
+
+  /* Mapping standard blue theme utility colors to active primary colors */
+  --color-blue-50: var(--custom-primary-50, #f0f7ff);
+  --color-blue-100: var(--custom-primary-100, #e0effe);
+  --color-blue-600: var(--custom-primary-600, #0284c7);
+  --color-blue-700: var(--custom-primary-700, #0369a1);
+  --color-blue-800: var(--custom-primary-800, #075985);
+  --color-blue-850: var(--custom-primary-800, #075985);
+  --color-blue-900: var(--custom-primary-900, #0f172a);
+  --color-blue-950: var(--custom-primary-950, #090d16);
+
+  /* Mapping standard orange theme utility colors to active accent colors */
+  --color-orange-50: var(--custom-accent-50, #fffaf0);
+  --color-orange-500: var(--custom-accent-500, #f97316);
+  --color-orange-600: var(--custom-accent-600, #ea580c);
+  --color-orange-700: var(--custom-accent-700, #c2410c);
 }
 
 /* Custom scrollbar */

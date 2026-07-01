@@ -638,12 +638,6 @@
   ],
   "logs": [
     {
-      "id": "LOG1782899656437mkf",
-      "time": "2026-07-01T09:54:16.437Z",
-      "user": "admin",
-      "action": "Đăng nhập hệ thống quản trị (Quản Trị Viên)"
-    },
-    {
       "id": "LOG1782814322646xwz",
       "time": "2026-06-30T10:12:02.647Z",
       "user": "admin",
