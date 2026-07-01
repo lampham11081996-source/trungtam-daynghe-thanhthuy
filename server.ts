@@ -3,10 +3,37 @@ import path from "path";
 import fs from "fs";
 import crypto from "crypto";
 import { createServer as createViteServer } from "vite";
+import { createClient } from "@supabase/supabase-js";
 
 const PORT = 3000;
 const DB_PATH = path.join(process.cwd(), "server", "db.json");
 const UPLOADS_DIR = path.join(process.cwd(), "public", "uploads");
+
+const SUPABASE_URL = process.env.SUPABASE_URL || "";
+const SUPABASE_ANON_KEY = process.env.SUPABASE_ANON_KEY || "";
+const supabase = SUPABASE_URL && SUPABASE_ANON_KEY
+  ? createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
+  : null;
+
+function supabaseEnabled() {
+  return !!supabase;
+}
+
+function mapSupabaseStudent(row: any) {
+  return {
+    id: String(row.id || ""),
+    name: row.ho_ten || "",
+    phone: row.so_dien_thoai || "",
+    dob: row.ngay_sinh || "",
+    identity: row.cccd || "",
+    address: row.dia_chi || "",
+    class: row.hang_dao_tao || row.khoa_hoc || "",
+    teacher: row.giao_vien || "Tự do",
+    status: row.trang_thai || "Mới đăng ký",
+    notes: row.ghi_chu || ""
+  };
+}
+
 
 // Ensure directories exist
 if (!fs.existsSync(path.dirname(DB_PATH))) {
@@ -331,14 +358,87 @@ async function startServer() {
   });
 
   // 2. School Info API
-  app.get("/api/info", (req, res) => {
+  app.get("/api/info", async (req, res) => {
+    if (supabaseEnabled()) {
+      try {
+        const { data, error } = await supabase!
+          .from("cau_hinh_website")
+          .select("*")
+          .limit(1)
+          .maybeSingle();
+
+        if (!error && data) {
+          return res.json({
+            name: data.ten_trung_tam || "Trung tâm dạy nghề Thanh Thủy",
+            address: data.dia_chi || "",
+            phone: data.so_dien_thoai || "",
+            email: data.email || "",
+            website: data.website || "",
+            ...data
+          });
+        }
+      } catch (error) {
+        console.error("Supabase /api/info error:", error);
+      }
+    }
+
     const db = readDb();
     res.json(db.info || {});
   });
 
   // Dynamic Init API to get all data at once
-  app.get("/api/init", (req, res) => {
+  app.get("/api/init", async (req, res) => {
     const db = readDb();
+
+    if (supabaseEnabled()) {
+      try {
+        const [infoRes, coursesRes, newsRes] = await Promise.all([
+          supabase!.from("cau_hinh_website").select("*").limit(1).maybeSingle(),
+          supabase!.from("khoa_hoc").select("*").order("id", { ascending: true }),
+          supabase!.from("tin_tuc").select("*").order("created_at", { ascending: false }).limit(20)
+        ]);
+
+        return res.json({
+          info: infoRes.data ? {
+            name: infoRes.data.ten_trung_tam || "Trung tâm dạy nghề Thanh Thủy",
+            address: infoRes.data.dia_chi || "",
+            phone: infoRes.data.so_dien_thoai || "",
+            email: infoRes.data.email || "",
+            website: infoRes.data.website || "",
+            ...infoRes.data
+          } : (db.info || {}),
+          courses: (coursesRes.data || []).map((c: any) => ({
+            id: c.ma_khoa_hoc || String(c.id),
+            name: c.ten_khoa_hoc || "",
+            class: c.hang || "",
+            price: c.hoc_phi || 0,
+            status: c.trang_thai || "active",
+            featured: true,
+            ...c
+          })),
+          schedules: db.schedules || [],
+          students: db.students || [],
+          questions: db.questions || [],
+          news: (newsRes.data || []).map((n: any) => ({
+            id: String(n.id),
+            title: n.tieu_de || "",
+            summary: n.mo_ta_ngan || "",
+            content: n.noi_dung || "",
+            image: n.anh_dai_dien || "",
+            date: n.created_at ? String(n.created_at).split("T")[0] : "",
+            status: n.trang_thai || "published",
+            ...n
+          })),
+          documents: db.documents || [],
+          albums: db.albums || [],
+          contacts: db.contacts || [],
+          logs: db.logs || []
+        });
+      } catch (error) {
+        console.error("Supabase /api/init error:", error);
+      }
+    }
+
     res.json({
       info: db.info || {},
       courses: db.courses || [],
@@ -365,7 +465,30 @@ async function startServer() {
   });
 
   // 3. Courses API
-  app.get("/api/courses", (req, res) => {
+  app.get("/api/courses", async (req, res) => {
+    if (supabaseEnabled()) {
+      try {
+        const { data, error } = await supabase!
+          .from("khoa_hoc")
+          .select("*")
+          .order("id", { ascending: true });
+
+        if (!error && data) {
+          return res.json(data.map((c: any) => ({
+            id: c.ma_khoa_hoc || String(c.id),
+            name: c.ten_khoa_hoc || "",
+            class: c.hang || "",
+            price: c.hoc_phi || 0,
+            status: c.trang_thai || "active",
+            featured: true,
+            ...c
+          })));
+        }
+      } catch (error) {
+        console.error("Supabase /api/courses error:", error);
+      }
+    }
+
     const db = readDb();
     res.json(db.courses || []);
   });
@@ -489,19 +612,37 @@ async function startServer() {
   });
 
   // Public search student profile by CCCD / Identity or Student ID
-  app.get("/api/students/search", (req, res) => {
+  app.get("/api/students/search", async (req, res) => {
     const { keyword } = req.query;
     if (!keyword) {
       return res.status(400).json({ error: "Vui lòng nhập CCCD/Mã học viên để tra cứu" });
     }
 
-    const kw = String(keyword).trim().toLowerCase();
+    const kw = String(keyword).trim();
+
+    if (supabaseEnabled()) {
+      try {
+        const { data, error } = await supabase!
+          .from("hoc_vien")
+          .select("*")
+          .or(`cccd.eq.${kw},so_dien_thoai.eq.${kw},id.eq.${kw}`)
+          .limit(1)
+          .maybeSingle();
+
+        if (!error && data) {
+          return res.json(mapSupabaseStudent(data));
+        }
+      } catch (error) {
+        console.error("Supabase /api/students/search error:", error);
+      }
+    }
+
+    const kwLower = kw.toLowerCase();
     const db = readDb();
-    // Search by exact identity (CCCD) or student ID, or case-insensitive name
     const student = db.students.find((s: any) => 
-      s.id.toLowerCase() === kw || 
-      (s.identity && s.identity.trim() === kw) || 
-      (s.phone && s.phone.trim() === kw)
+      String(s.id || "").toLowerCase() === kwLower || 
+      (s.identity && String(s.identity).trim() === kw) || 
+      (s.phone && String(s.phone).trim() === kw)
     );
 
     if (!student) {
@@ -512,16 +653,76 @@ async function startServer() {
   });
 
   // Public registration form submit
-  app.post("/api/students/register", (req, res) => {
-    const { name, phone, dob, identity, address, class: className, teacher, notes } = req.body;
+  app.post("/api/students/register", async (req, res) => {
+    const { name, phone, dob, identity, address, class: className, teacher, notes, email } = req.body;
 
     if (!name || !phone || !className || !identity) {
       return res.status(400).json({ error: "Vui lòng điền đầy đủ họ tên, số điện thoại, số CCCD và hạng bằng muốn học" });
     }
 
+    if (supabaseEnabled()) {
+      try {
+        const { data: existed } = await supabase!
+          .from("hoc_vien")
+          .select("id, ho_ten, cccd")
+          .eq("cccd", String(identity).trim())
+          .limit(1)
+          .maybeSingle();
+
+        if (existed) {
+          return res.status(400).json({ error: `Số CCCD ${identity} đã tồn tại trong hệ thống dưới tên ${existed.ho_ten}` });
+        }
+
+        const payload = {
+          ho_ten: String(name).trim(),
+          so_dien_thoai: String(phone).trim(),
+          ngay_sinh: dob || null,
+          cccd: String(identity).trim(),
+          email: email || null,
+          dia_chi: address || null,
+          hang_dao_tao: className,
+          khoa_hoc: className,
+          trang_thai: "Mới đăng ký",
+          ghi_chu: notes || "Đăng ký trực tuyến từ website"
+        };
+
+        const { data, error } = await supabase!
+          .from("hoc_vien")
+          .insert(payload)
+          .select("*")
+          .single();
+
+        if (error) {
+          console.error("Supabase insert hoc_vien error:", error);
+          return res.status(500).json({ error: "Không thể lưu đăng ký vào Supabase. Vui lòng kiểm tra RLS/Policy." });
+        }
+
+        // Ghi thêm sang bảng dang_ky_hoc nếu bảng có tồn tại và đúng schema; lỗi ở bảng phụ sẽ không làm hỏng đăng ký chính.
+        try {
+          await supabase!.from("dang_ky_hoc").insert({
+            ho_ten: String(name).trim(),
+            so_dien_thoai: String(phone).trim(),
+            cccd: String(identity).trim(),
+            email: email || null,
+            dia_chi: address || null,
+            hang_dao_tao: className,
+            khoa_hoc: className,
+            trang_thai: "Mới đăng ký",
+            ghi_chu: notes || "Đăng ký trực tuyến từ website"
+          });
+        } catch (extraError) {
+          console.warn("Optional insert dang_ky_hoc skipped:", extraError);
+        }
+
+        return res.json({ success: true, student: mapSupabaseStudent(data) });
+      } catch (error) {
+        console.error("Supabase /api/students/register error:", error);
+        return res.status(500).json({ error: "Lỗi kết nối Supabase, vui lòng thử lại sau" });
+      }
+    }
+
     const db = readDb();
 
-    // Check duplicate CCCD in database
     const duplicate = db.students.find((s: any) => s.identity && s.identity.trim() === String(identity).trim());
     if (duplicate) {
       return res.status(400).json({ error: `Số CCCD ${identity} đã tồn tại trong hệ thống dưới tên ${duplicate.name}` });
@@ -965,17 +1166,67 @@ async function startServer() {
   });
 
   // 10. Contact Message API
-  app.get("/api/contacts", requireAuth, (req, res) => {
+  app.get("/api/contacts", requireAuth, async (req, res) => {
+    if (supabaseEnabled()) {
+      try {
+        const { data, error } = await supabase!
+          .from("lien_he")
+          .select("*")
+          .order("created_at", { ascending: false });
+
+        if (!error && data) {
+          return res.json(data.map((c: any) => ({
+            id: String(c.id),
+            name: c.ho_ten || "",
+            phone: c.so_dien_thoai || "",
+            email: c.email || "",
+            subject: c.tieu_de || "Liên hệ nhanh",
+            message: c.noi_dung || "",
+            date: c.created_at ? String(c.created_at).split("T")[0] : "",
+            status: c.trang_thai || "Mới",
+            notes: c.ghi_chu || ""
+          })));
+        }
+      } catch (error) {
+        console.error("Supabase /api/contacts error:", error);
+      }
+    }
+
     const db = readDb();
     res.json(db.contacts || []);
   });
 
   // Public send contact message
-  app.post("/api/contacts", (req, res) => {
+  app.post("/api/contacts", async (req, res) => {
     const { name, phone, email, subject, message } = req.body;
 
     if (!name || !phone || !message) {
       return res.status(400).json({ error: "Họ tên, số điện thoại và nội dung lời nhắn là bắt buộc" });
+    }
+
+    if (supabaseEnabled()) {
+      try {
+        const { error } = await supabase!
+          .from("lien_he")
+          .insert({
+            ho_ten: String(name).trim(),
+            so_dien_thoai: String(phone).trim(),
+            email: email || null,
+            tieu_de: subject || "Liên hệ nhanh",
+            noi_dung: message,
+            trang_thai: "Mới"
+          });
+
+        if (error) {
+          console.error("Supabase insert lien_he error:", error);
+          return res.status(500).json({ error: "Không thể lưu liên hệ vào Supabase. Vui lòng kiểm tra RLS/Policy." });
+        }
+
+        return res.json({ success: true });
+      } catch (error) {
+        console.error("Supabase /api/contacts error:", error);
+        return res.status(500).json({ error: "Lỗi kết nối Supabase, vui lòng thử lại sau" });
+      }
     }
 
     const db = readDb();
